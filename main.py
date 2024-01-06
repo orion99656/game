@@ -40,7 +40,7 @@ def process_key(key):
             data = json.load(lvl)
             tick = data["tick"] or 1
             helico.import_data(data["helicopter"])
-            field.inport_data(data["field"])
+            field.import_data(data["field"])
             clouds.import_data(data["clouds"])
             
 listener = keyboard.Listener(
